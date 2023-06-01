@@ -415,8 +415,8 @@ print(f"남은 잔액 : {money}")
 
 
 
-fund_money = input("가지고 싶은 돈은 얼마 인가요? ( 10만원 이상 ) : ")
-fund_money = int(fund_money)
+fund_money = int(input("가지고 싶은 돈은 얼마 인가요? ( 10만원 이상 ) : "))
+# fund_money = int(fund_money) 이렇게 하는 건 별로니까네 ~
 if(fund_money < 100000):  # 235800 이면? 4매, 3매, 1매, 1개, 3개
     print("기초 자금이 부족합니다. ")
     exit()
@@ -484,6 +484,16 @@ print(" ")
 #endregion
 
 
+#region if문 환전 예제 선생님 버전
+
+
+
+
+
+
+
+
+#endregion
 
 
 
