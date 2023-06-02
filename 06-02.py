@@ -161,7 +161,7 @@ print(" ")
 
 
 
-#region 반복문 (1)
+#region 반복문-1)
 print(" ")
 print(" ")
 
@@ -206,16 +206,199 @@ for key, value in grade.items():
 # for key, value in grade.items():
 #     print("key:", key, "value:",value)
 
-
-
-
-
-
 print(" ")
 print(" ")
-
-
 #endregion
+
+
+
+
+
+
+
+#region 반복문 2)
+print(" ")
+print(" ")
+
+meter_list = [1,3,5,7]
+cm_list = [100 * i for i in meter_list]
+print(cm_list)
+# [100, 300, 500, 700]
+
+list_a = [1,2,3,4,5]
+result = []
+for x in list_a:
+    result.append(x*x)
+print(f"리스트 함수 사용 : {result}")
+# 리스트 함수 사용 : [1, 4, 9, 16, 25]
+
+result = [i * i for i in list_a]
+print(f"반복문 사용해서 한 번에 : {result}")
+# 반복문 사용해서 한 번에 : [1, 4, 9, 16, 25]
+
+
+list_a = [1,2,3,4,5]
+result = [x*x for x in list_a if(x%2 == 0)]
+print(result)
+# [4, 16]
+
+
+# 구구단
+result = [x*y for x in range(2,10) for y in range(1,10)]
+print(f"전체 다\n{result}")
+
+print("")
+
+result2 = [x*y for x in range(2, 10) if ( x%2 == 0 ) for y in range (1, 10)]
+print(f"짝수만\n{result2}")
+
+
+print(" ")
+print(" ")
+#endregion
+
+
+
+
+
+
+
+
+#region 리스트와 반복문을 이용한 예제 1 ~ 6번 ( 난수 맞추기 문제 )
+print(" ")
+print(" ")
+
+# ex1
+for i in range(2,10) :
+    print(f"----{i}단----")
+    for j in range(1,10) :
+        print(f"{i} x {j} = {i*j}")
+
+# ex2
+num = []
+plus = []
+minus = []
+
+for i in range(10):
+    put_num = int(input("정수를 입력하세요 :"))
+    num.append(put_num)
+
+for x in num :
+    if (x > 0) :
+        plus.append(x)
+    else:
+        minus.append(x)
+
+print(f"입력받은 정수는 : {num}입니다.")
+print(f"그 중 양수는 {plus} 이며, 음수는 {minus} 입니다 .")
+
+# ex3
+total = 0
+avg = 0
+
+grade_list = [70, 60, 55, 75, 95, 90, 80, 80, 85, 100]
+for i, grade in enumerate(grade_list) :
+    total += grade
+avg = total / i
+print(f"총점은 : {total}")
+print(f"평균은 : {avg}")
+    
+
+
+
+# ex4
+result = [x for x in grade_list if( x < avg ) ]
+print(f"평균미만의 값들은 : {result}")
+
+
+
+
+# ex5
+
+import random		
+# ex5 = random.randint(a, b)	# a ~ b 범위에 있는 정수를 난수로 반환
+# print(ex5)
+
+# 먼저 컴퓨터가 난수를 생성하고 맞출 때까지 못나가 !
+# 랜덤 수 샌성
+a = 1
+b = 1000
+import random       # 내장 함수 아니기에 import 필요
+c_random = random.randint(a, b)
+# print(c_random) # 테스트용
+
+# while(c_random) :
+#     correct = int(input("컴퓨터가 만든 숫자는?"))
+#     if(c_random == correct):
+#         print("정답입니다 ㅎㅎ 종료할게요")
+#         break
+#     else :
+#         print("땡 !!!")
+    
+while(c_random) :
+    correct = int(input("컴퓨터가 만든 숫자는?"))
+    if(c_random > correct):
+        print("땡 !! UP !")
+        continue
+    elif( c_random < correct):
+        print("땡 !! Down !")
+        continue
+    else :
+        print("정답입니다 ㅎㅎ 종료 !")
+        break
+
+
+print(" ")
+print(" ")
+
+# ex6
+a = 1
+b = 100
+import random
+first = 1
+last = 100
+count = 0
+question = 0
+answer = 0
+
+ready = input("준비되었나요! : ")
+# 시작하면 카운트 시작 !
+import time
+start = time.time()
+goal = start + 25
+# print(start)
+# print(goal)
+
+while(ready):
+    # print(count) 테스트용
+    first = random.randint(a, b)
+    last = random.randint(a, b)
+    answer = first+last
+    question = int(input(f"{first} + {last} = "))
+    now = time.time()
+    dif_time = goal - now
+    if(now > goal) :
+        print("시간초과 ㅎㅎ")
+        print(f"경과된 시간은 : {int(dif_time)}초네요ㅎㅎ")
+        break
+    else :
+        if( answer != question) :
+            print(f"땡 !!! 정답은 {answer} 이였습니다ㅎㅎ ")
+            break
+        elif ( answer == question):
+            print("Bingo !!")
+            count += 1
+            if (count == 5) :
+                print("Complete !")
+                print(f"걸린 시간 : {int(dif_time)}초")
+                break
+
+print("end of program")
+
+print(" ")
+print(" ")
+#endregion
+
 
 
 
@@ -228,3 +411,8 @@ print(" ")
 
 
 #endregion
+
+
+
+
+
