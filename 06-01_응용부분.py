@@ -43,9 +43,9 @@ print(" ")
 print(" ")
 print(" ")
 list1 = [1, 2, 3]
-# str(list1) + "Hi"   # 가능
-# list1 + "Hi"      # 불가능
-print(list1*3) # 123 123 123 이렇게 3개
+# str(list1) + "Hi"     # 가능
+# list1 + "Hi"          # 불가능
+print(list1*3)          # 123 123 123 이렇게 3개
 
 
 list1 = [1,2,3]
@@ -179,7 +179,7 @@ print(" ")
 print(" ")
 print(" ")
 
-# 딕셔너리
+# 딕셔너리 {}
 user={'name':'홍길동', 'age':20}
 print(user.keys())      # dict_keys(['name', 'age'])
 print(user.values())    # dict_values(['홍길동', 20])
