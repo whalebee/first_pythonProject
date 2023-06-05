@@ -23,17 +23,17 @@ ball2 = 0
 ball3 = 0
 
 
-op_gg = 2 # 총 전적
-op_gg_win = 2 # 승
+op_gg = 3 # 총 전적
+op_gg_win = 3 # 승
 op_gg_lose = 0 # 패
 
-# # 파일 읽기와 쓰기 왜 안돼이잉
-# f = open('C:\Users\Administrator\Desktop\python\op_gg.txt')
-# while True:
-#     line = f.readline()
-#     if not line: break
-#     print(line)
-# f.close()
+# 파일 읽기와 쓰기 왜 안돼이잉
+f = open(r'C:\Users\Administrator\Desktop\python\op_gg.txt', '+a')
+while True:
+    line = f.readline()
+    if not line: break
+    print(line)
+f.close()
 
 
 
