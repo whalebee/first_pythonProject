@@ -299,7 +299,8 @@ avg = 0
 grade_list = [70, 60, 55, 75, 95, 90, 80, 80, 85, 100]
 for i, grade in enumerate(grade_list) :
     total += grade
-avg = total / i
+avg = total / (i+1)
+# print(i+1) -> 인덱스가 10개지만 마지막 인덱스의 자리가 9라서 !!
 print(f"총점은 : {total}")
 print(f"평균은 : {avg}")
     
