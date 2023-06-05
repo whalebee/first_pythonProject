@@ -353,6 +353,7 @@ print(" ")
 print(" ")
 
 # ex6
+# ex6
 a = 1
 b = 100
 import random
@@ -378,9 +379,10 @@ while(ready):
     question = int(input(f"{first} + {last} = "))
     now = time.time()
     dif_time = goal - now
+    time_exceed = now - goal
     if(now > goal) :
         print("시간초과 ㅎㅎ")
-        print(f"경과된 시간은 : {int(dif_time)}초네요ㅎㅎ")
+        print(f"경과된 시간은 : {int(time_exceed)}초네요ㅎㅎ")
         break
     else :
         if( answer != question) :
