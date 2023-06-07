@@ -20,7 +20,7 @@ print(f"주등록번호의 성별을 나타내는 숫자는 {ex3}입니다. ")
 
 # 4번
 ex4_year = input("태어난 년도를 입력해주세요 [ex) 1993 ] : ")
-ex4_month = input("태어난 월을 입력해주세요 [ex) 01 or 11 ] : ")
+ex4_month = input("태어난 월을 입력해주세요 [ex) 01 or 11 or 5 ] : ")
 ex4_day = input("태어난 일을 입력해주세요 [ex) 01, 30 ] : ")
 
 ex_4 = ex4_year + ex4_month

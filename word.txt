@@ -1,0 +1,100 @@
+abstract
+,accumulator
+,address
+,allocate
+,Anaconda
+,angular bracket
+,annotation
+,application
+,argument
+,arithmetic
+,array
+,assert
+,assertion
+,assign
+,assignment
+,attribute
+,auth
+,average access time
+,backend
+,background
+,bad block
+,base
+,base number
+,batch
+,binary
+,binary variable
+,boilerplate
+,Boolean
+,Boolean algebra
+,bound
+,bracket
+,build
+,byte padding
+,C
+,C++
+,cache
+,cell
+,character
+,checksum
+,class
+,clone
+,column
+,columnar databases
+,combinational logic
+,command
+,comment
+,commit
+,compiler
+,component
+,composition
+,comprehension
+,concrete
+,constructor
+,convention
+,CSS
+,Cython
+,data source
+,declaration
+,default
+,dereference
+,dereference type
+,deserialization
+,design
+,destruction
+,DevOps
+,dialect
+,dictionary
+,directive
+,Docker
+,DRAM(Dynamic Random Access Meomry)
+,driver
+,dummy variable
+,encapsulation
+,entity
+,enumeration
+,event-driven
+,execution
+,exponent
+,flip-flop
+,foreground
+,foreign key
+,fork
+,formatting
+,front end, frontend
+,function
+,generator
+,GET
+,getter
+,Git
+,GitHub
+,global
+,global variable
+,graph database
+,handler
+,hash
+,hash table
+,immutable
+,implement
+,inheritance
+,inode
