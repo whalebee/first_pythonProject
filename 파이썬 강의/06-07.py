@@ -150,8 +150,8 @@ tanaka.greeting("Python", "C", [1,2,3,4,5]) # Hello Python C [1,2,3,4,5]
 
 
 print("")
+print("")
 print("--응용--")
-
 class Person:
     # 오버로딩은 파이썬에서 불가능함
     # def __init__(self):
@@ -191,7 +191,7 @@ tanaka.name = '다나카'
 print(tanaka.name) # 다나카
 
 sakura = Person_1()
-# print(sakura.name) # 원래는 없다는 것을 증명하기 위함
+# print(sakura.name) # 원래는 없다는 것을 증명하기 위함 -> 에러나는 것으로 증명
 
 
 print("")
@@ -203,7 +203,7 @@ class seceret:
         self.name = name
         self.age = age
         self.address= address
-        self.__wallet = wallet # 숨기기
+        self.__wallet = wallet # 보안성을 이용한 숨기기
 
     def pay(self, amount):
         self.__wallet -= amount
@@ -231,7 +231,7 @@ tanaka.balance() # 이건 가능
 
 print(tanaka.get_wallet())
 print(tanaka.wallet) # property 사용
-tanaka.wallet = -1000 # 입력 값 오류
+tanaka.wallet = -1000 # if의 "입력 값 오류"를 나타냄
 
 
 print("")
@@ -311,10 +311,48 @@ print(" ")
 
 
 
-#region 
+#region ? 모름 약간 복습용인듯
+print(" ")
+print(" ")
+class Person:
+    count = 0 # 클래스 속성 -> 클래스 안에서 공통적으로 쓰는 변수 ( 모든 인스턴스에서 공유됨 )
+
+    # 생성자 함수
+    def __init__(self, name, age, address, wallet):
+        # 인스턴스 속성(변수)
+        self.name = name
+        self.age = age
+        self.address = address
+        self.count = 0
+        self.__wallet = wallet
+
+        # 클래스 변수
+        Person.count += 1
+
+    @property
+    def wallet(self):
+        return self.__wallet
+    
+    @wallet.setter
+    def wallet(self, wallet):
+        if wallet < 0:
+            print("입력 값 오류")
+            return
+        self.__wallet = wallet
+
+
+kim = Person("김스나", 20, "an-san", 10000)
+lee = Person("lee", 30, "seoul", 20000)
+
+print(Person.count) # 클래스 속성 보는 것
+print(kim.count) # 인스턴스 속성 보는 것
+print(lee.count)
 
 
 
+
+print(" ")
+print(" ")
 #endregion
 
 
