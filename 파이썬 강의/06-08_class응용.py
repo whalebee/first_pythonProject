@@ -302,7 +302,7 @@ class Student(Person):
         self.score = {}
         self.result_total = 0
         self.call_total = 0
-        # self.iscall_total = 0
+        self.iscall_total = 0
         self.result_avg = 0
 
     def __str__(self):
@@ -316,7 +316,7 @@ class Student(Person):
     
     def total_score(self):
         self.iscall_total = 1
-        for x,y in self.score.items():
+        for x,y in self.score.items(): # values() 로 뽑으면 더 간단
             self.result_total += y
             # print(y)
         print(f"총 점수 : {self.result_total}점")
