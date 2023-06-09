@@ -142,7 +142,7 @@ hue.fight(suzi)
 hue - suzi
 # 사랑 하는 사이가 아닌 것 확인 필요
 # hue - test1 # 같은 집안이 아님 -ch
-# hue - test2 # ㅎㅎ
+# hue - test2 # -ch
 
 # print(dir(HouseGrant)) 
 
