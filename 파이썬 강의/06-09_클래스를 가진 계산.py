@@ -253,9 +253,12 @@ class FourCalc:
 class CheckFourCalc(FourCalc):
     def div(self):
         try:
-            super().div() # 피드백 받은 곳
+            return super().div() # 피드백 받은 곳 # return 도 넣어줘야하는 듯?
         except ZeroDivisionError:
             return "오류 발생 : division dy zero"
+
+
+
 
 
 myCalc = CheckFourCalc()
@@ -332,6 +335,31 @@ print(yone)
 
 #endregion
 
+
+
+
+
+
+
+
+#region 
+
+
+
+#endregion
+
+
+
+
+
+
+
+
+#region 
+
+
+
+#endregion
 
 
 
