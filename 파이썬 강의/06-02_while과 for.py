@@ -2,7 +2,9 @@
 print(" ")
 print(" ")
 
-# prompt = """1.Add \n2.Del\n3.List\n4.Quit\nEnter Number : """
+prompt = """1.Add \n2.Del\n3.List\n4.Quit\nEnter Number : """
+while int(input(prompt)) != 4 :
+    pass # 괄호가 없을 때 그냥 pass 써주면 됨 !
 
 # 내가 해서 틀린 거
 # num = 0
@@ -11,8 +13,8 @@ print(" ")
 #     print(num)
     
 # 선생님 버전
-# while int(input(prompt)) != 4 :
-#     pass # 괄호가 없을 때 그냥 pass 써주면 됨 !
+while int(input(prompt)) != 4 :
+    pass # 괄호가 없을 때 그냥 pass 써주면 됨 !
 
 
 grade = 'F'
@@ -74,7 +76,6 @@ print(" ")
 
 n = int(input("몇 단짜리 별이 보고 싶어요? : "))
 i = 0
-j = 0
 
 while(i <= n) :
     print("*" * i)
@@ -301,6 +302,7 @@ for i, grade in enumerate(grade_list) :
     total += grade
 avg = total / (i+1)
 # print(i+1) -> 인덱스가 10개지만 마지막 인덱스의 자리가 9라서 !!
+# 아니면 걍 len 써
 print(f"총점은 : {total}")
 print(f"평균은 : {avg}")
     

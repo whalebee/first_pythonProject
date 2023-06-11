@@ -114,7 +114,7 @@ print(isinstance(tanaka, Person))
 def factorial(n):
     if not isinstance(n, int) or n < 0:
         return None
-    if n == 1:
+    if n == 1: # else 아님 주의 !! else면 무조건 1만 나오잖어ㅋㅋ
         return 1
     return n * factorial(n-1)
 
@@ -145,7 +145,7 @@ class Person_basic:
             print(value)
 
 # 기초
-tanaka = Person_basic() # 생성자함수
+tanaka = Person_basic()
 tanaka.greeting("Python", "C", [1,2,3,4,5]) # Hello Python C [1,2,3,4,5]
 
 

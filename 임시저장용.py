@@ -17,9 +17,21 @@ print(" ")
 from game_06_09 import sound
 import game_06_09
 # sound init에서 import echo와 wav
-game_06_09.sound.echo.echo_test()
+# game_06_09.sound.echo.echo_test()
 game_06_09.sound.wav
 
+
+
+class Grade:
+    def __init__(self, score):
+        self.score = score
+    def __add__(self, other):
+        result = self.score + other.score
+        return result
+
+math_score = Grade(50)
+science_score = Grade(80)
+print(math_score + science_score)
 
 
 

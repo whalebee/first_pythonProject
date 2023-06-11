@@ -44,8 +44,8 @@ print(fn_sum(*list_test))
 # 가변 매개변수
 # def 함수이름(*arg): -> tuple형식으로 전달
 def get_max(*args):
-    print('*arg의 타입은 :', type(args))
-    # *arg의 타입은 : <class 'tuple'>
+    print('*args의 타입은 :', type(args))
+    # *args의 타입은 : <class 'tuple'>
     max = 0
     for num in args:
         if num > max :
@@ -53,7 +53,8 @@ def get_max(*args):
     return max # 값도 출력해주게 됨        
 max_num = get_max(10,20,1,2,50,32)
 print(max_num)
-# 함수안에 있는 print의 결과와 50이라는 값도 나옴
+# *args의 타입은 : <class 'tuple'>
+# 50
 
 # def 함수이름(**arg): -> dictionary형식으로 전달
 def show_args(**args):
@@ -333,16 +334,16 @@ def c_square(list_a):
     for i in list_a:
         list_b.append(i*i)
     return list_b
-result_b = [4,5,6]
-print(c_square(result_b)) # [16, 25, 36]
+list_result = [4,5,6]
+print(c_square(list_result)) # [16, 25, 36]
 
 # map 사용
 def c_square_2(target):
         return target*target
-print(list(map(c_square_2, result_b))) # [16, 25, 36]
+print(list(map(c_square_2, list_result))) # [16, 25, 36]
 
 # map과 lambda 사용
-print(list(map(lambda x : x*x, result_b))) # [16, 25, 36]
+print(list(map(lambda x : x*x, list_result))) # [16, 25, 36]
 
 
 print(" ")

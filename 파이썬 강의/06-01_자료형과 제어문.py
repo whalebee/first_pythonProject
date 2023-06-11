@@ -77,6 +77,8 @@ my_list.append([7,8])
 # 단순 연산 ( 대입이 아님 )
 my_list2 = [9,10]
 # print(my_list+my_list2)
+# [1, 3, 2, 4, 5, 6, [7, 8], 9, 10]
+
 
 # pop은 인덱스를 다룸
 my_list.pop()
@@ -154,13 +156,15 @@ print(list1, list2)
 # print(list2 = list1[:]) # 뭐지 오류남 ㅋㅋ
 # print(list2 = list(list1))
 # print([] + list1)
+list1=[1,2,3,[4,5]]
+import copy
+list2=copy.deepcopy(list1)
+
 
 
 # ?? 잤다 
 # tuple은 () 이런 형식으로 쓰이는 것 같음
-list1=[1,2,3,[4,5]]
-import copy
-list2=copy.deepcopy(list1)
+
 
 fruit = ['strawberry','peach', 'banana', 'melon', 'orange']
 print(fruit[2:4], fruit[::2])
@@ -353,7 +357,7 @@ if x==10 and y==20:         # & | 이런 기호들 안됨
 else :
     print(False)
 
-if not x==10:               # x^10 을 했는데 이건 안되는건가?
+if not x==10:               # x^10 을 했는데 이건 안되는건가? -> 이건 정렬이고ㅋㅋ x != 10 이렇게 써야지
     print(True)
 else:
     print(False)
@@ -484,16 +488,7 @@ print(" ")
 #endregion
 
 
-#region if문 환전 예제 선생님 버전
 
-
-
-
-
-
-
-
-#endregion
 
 
 

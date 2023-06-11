@@ -255,21 +255,6 @@ class Person:
     def __str__(self):
         return f"이름:{self.name}, 나이:{self.__age}, 전화번호:{self.phone}, 성별:{self.gender}"
     
-    # def age_start_end(value):
-    #     def wrapper(self, age):
-    #         print(value.__name__, "함수 시작")
-    #         if age < 0:
-    #             print("입력 값 오류")
-    #             return
-    #         result = value(self, age)
-    #         print(f"입력된 나이 : {result}")
-    #         print(value.__name__, "함수 정상 종료")
-    #         return result
-    #     return wrapper
-    
-    # @age_start_end
-    # age = property(get_age, set_age)
-    # 2번째 방법으로 하라는 뜻
     @property
     def age(self):
         return self.__age
