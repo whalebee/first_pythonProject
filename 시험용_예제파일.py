@@ -182,7 +182,7 @@ print(" ")
 
 
 # print(type(n)) 
-
+#
 # *
 # **
 # ***
@@ -443,7 +443,7 @@ print(result)
 
 
 def factorial(n):
-    if not isinstance(n, int) or n < 0:
+    if not isinstance(n, int) or n < 0: # or이다 or !!!!
         return None
     if n == 1: # else 아님 주의 !! else면 무조건 1만 나오잖어ㅋㅋ
         return 1
@@ -452,17 +452,8 @@ def factorial(n):
 
 
 
-
-
-
-
-
-
-
-
-
-
 #region 함수 정의 예제
+
 print(" ")
 print(" ")
 
@@ -566,7 +557,7 @@ print(f"4번문제 나머지는 : {v2}")
 
 def palindrome(str_a):
     # str_a = str_a.replace(" ","")
-    print(str_a[1:-1])
+    # print(str_a[1:-1])
     if len(str_a) <= 1:
         return True
     if str_a[0] != str_a[-1]:
@@ -592,3 +583,30 @@ print(palindrome("다리 그리고 저고라 그리다")) # False
 print(palindrome("1 2 321")) # True
 print(palindrome("was it a cat i saw")) # True
 #endregion
+
+
+
+# 데코레이터 : 함수를 꾸며주는 어노테이션 , 장식자
+# 함수를 수정하지 않고, 추가기능을 구현하고 싶을 때 사용할 수 있다.
+
+
+
+
+
+# def greeting(self):
+#     super().greeting()  # 이것도 쓰고
+#     Grade.greeting(self)# 이것도 쓰고
+#     print("Hello")      # 이것도 쓰고ㅋㅋ
+#     # 이렇게 하면 3개를 다 쓰는 것
+
+
+
+
+
+
+
+
+
+
+
+
